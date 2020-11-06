@@ -16,14 +16,14 @@ class Database:
         Database.DATABASE = client["fullstack"]
 
     @staticmethod
-    def insert(colletion, data):
-        Database.DATABASE[colletion].insert(data)
+    def insert(collection, data):
+        Database.DATABASE[collection].insert(data)
 
     @staticmethod
-    def find(colletion, query):
-        return Database.DATABASE[colletion].insert(query)
+    def find(collection, query):
+        return Database.DATABASE[collection].insert(query)
 
     @staticmethod
-    def find_one(colletion, query):
-        return Database.DATABASE[colletion].insert(query)
+    def find_one(collection, query):
+        return Database.DATABASE[collection].insert(query)
 

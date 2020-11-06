@@ -1,3 +1,5 @@
+from src.database import Database
+
 class Post:
 
     def __init__(self, blog_id, title, content, author, date, id_post):
