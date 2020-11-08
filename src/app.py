@@ -1,18 +1,12 @@
-from models.post import Post
 from database import Database
+from menu import Menu
 
-Database.initialize()
-
-# post = Post(
-    # blog_id="123",
-    # title="great title",
-    # content="great contentnteintient",
-    # author="daniel bailo"
-    # )
-
-# post.save_to_mongo()
-
-posts = Post.from_blog("123")
-
-for post in posts:
-    print(post)
+if __name__ == "__main__":
+    Database.initialize()
+    while True:
+        menu = Menu()
+        menu.run_menu()
+        run_again = input("Do you wanna run again? (Y) or (N)")
+        if run_again != 'Y':
+            print("Ty for use our blog!")
+            break
